@@ -10,3 +10,14 @@ These defaults are designed for a solo-maintained project set:
 - low maintenance overhead
 
 Individual repositories can override these defaults when they need something more specific.
+
+## Template starter set
+
+The organization currently keeps a small template set:
+
+- `repo-template` for generic repositories
+- `service-template` for apps, APIs, and services
+- `library-template` for reusable packages and shared modules
+- `infra-template` for infrastructure and operations repositories
+
+The intent is to keep the catalog small and practical while relying on org-wide rules, Actions policy, and code security defaults for the shared guard rails.

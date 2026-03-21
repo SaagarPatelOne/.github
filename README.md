@@ -21,3 +21,12 @@ The organization currently keeps a small template set:
 - `infra-template` for infrastructure and operations repositories
 
 The intent is to keep the catalog small and practical while relying on org-wide rules, Actions policy, and code security defaults for the shared guard rails.
+
+## Operating manual
+
+See [REPO_ONBOARDING.md](REPO_ONBOARDING.md) for the default path for:
+
+- choosing the right starter template
+- creating a new repository with `bootstrap-gh-repo`
+- hardening an existing repository with `harden-gh-repo`
+- understanding which protections come from the organization and which are still reconciled per repository

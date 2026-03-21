@@ -1,0 +1,8 @@
+{
+  "name": "Baseline CI",
+  "description": "Standard hygiene checks with the org reusable CI workflow.",
+  "iconName": "check",
+  "categories": [
+    "Continuous integration"
+  ]
+}

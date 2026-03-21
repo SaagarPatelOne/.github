@@ -1,0 +1,51 @@
+name: Bug report
+description: Report a reproducible problem with enough detail to investigate it.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened, and why does it matter?
+      placeholder: A short description of the bug and its user impact.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: List the exact steps someone else can follow.
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: What should have happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: What actually happened?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Share the repo, branch, commit, device, browser, OS, or runtime details that matter.
+      placeholder: Repository, branch, commit, browser, OS, runtime, or other useful context.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs, screenshots, or extra context
+      description: Paste only relevant evidence. Remove secrets before submitting.
+      placeholder: Relevant logs, screenshots, or notes.

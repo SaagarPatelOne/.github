@@ -1,0 +1,36 @@
+name: Feature request
+description: Propose a scoped improvement with a clear problem statement.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What problem, friction, or missed opportunity are you seeing?
+      placeholder: Describe the problem and who it affects.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: What would you like to happen?
+      placeholder: Describe the change you want and how it should work.
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Expected value
+      description: Why is this worth doing now?
+      placeholder: Explain the expected user, product, or maintenance benefit.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What workarounds or other options have you considered?
+      placeholder: Share alternatives, tradeoffs, or constraints.

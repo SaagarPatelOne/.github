@@ -1,0 +1,9 @@
+{
+  "name": "Dependency Review",
+  "description": "Optional pull request dependency review using the org reusable workflow.",
+  "iconName": "package",
+  "categories": [
+    "Security",
+    "Code review"
+  ]
+}

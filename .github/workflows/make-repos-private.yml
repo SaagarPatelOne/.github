@@ -1,0 +1,33 @@
+name: Make All Repos Private
+
+on:
+  workflow_dispatch:
+
+jobs:
+  make-private:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make all public repos private
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Fetching all public repositories..."
+          repos=$(gh repo list "${{ github.repository_owner }}" --visibility public --json name --jq '.[].name' --limit 100)
+
+          if [ -z "$repos" ]; then
+            echo "No public repositories found. All repos are already private!"
+            exit 0
+          fi
+
+          echo "Found the following public repositories:"
+          echo "$repos"
+          echo ""
+
+          for repo in $repos; do
+            echo "Making ${{ github.repository_owner }}/$repo private..."
+            gh repo edit "${{ github.repository_owner }}/$repo" --visibility private
+            echo "  Done."
+          done
+
+          echo ""
+          echo "All repositories have been set to private."

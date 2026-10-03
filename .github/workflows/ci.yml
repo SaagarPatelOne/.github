@@ -12,6 +12,7 @@ permissions:
 
 jobs:
   hygiene:
+    name: CI / hygiene
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
